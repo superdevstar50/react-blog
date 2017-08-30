@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class PostsNew extends Component {
     render() {
-        retrun(
+        return(
             <div>New Post</div>
         );
     }
