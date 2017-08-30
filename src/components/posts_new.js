@@ -12,7 +12,7 @@ class PostsNew extends Component {
                 <label>{field.label}</label>
                 <input
                     type="text"
-                    className="form-conrol"
+                    className="form-control form-control-lg"
                     { ...field.input }
                 />
                 <div className="text-danger">{field.meta.touched ? field.meta.error : ''}</div>
@@ -30,7 +30,7 @@ class PostsNew extends Component {
         const {handleSubmit} = this.props;
         const btn = {marginLeft: '5px'}
         return(
-            <form onSubmit={ handleSubmit(this.onSubmit.bind(this)) }>
+            <form className="col-md-6" onSubmit={ handleSubmit(this.onSubmit.bind(this)) }>
                 <Field
                     name="title"
                     label="Title"
