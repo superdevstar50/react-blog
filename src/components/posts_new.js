@@ -11,6 +11,7 @@ class PostsNew extends Component {
                     className="form-conrol"
                     { ...field.input }
                 />
+                {field.meta.error}
             </div>
         );
     }
